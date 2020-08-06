@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7dabf8fcc5144d988e99bfde4cc6d029 {
+                #map_2bbf94fc6f4b40898b35e2e696c1ed9c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_7dabf8fcc5144d988e99bfde4cc6d029" ></div>
+            <div class="folium-map" id="map_2bbf94fc6f4b40898b35e2e696c1ed9c" ></div>
         
 </body>
 <script>    
     
-            var map_7dabf8fcc5144d988e99bfde4cc6d029 = L.map(
-                "map_7dabf8fcc5144d988e99bfde4cc6d029",
+            var map_2bbf94fc6f4b40898b35e2e696c1ed9c = L.map(
+                "map_2bbf94fc6f4b40898b35e2e696c1ed9c",
                 {
                     center: [36.58, -99.09],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,39 @@
 
         
     
-            var tile_layer_da4a398d4357405194fab454f4ce43b7 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_7dabf8fcc5144d988e99bfde4cc6d029);
+            var tile_layer_18640944b910428680e92d2d3511b554 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2bbf94fc6f4b40898b35e2e696c1ed9c);
         
+    
+            var feature_group_57ce214bd81f4cbca5293f2e4b3006d5 = L.featureGroup(
+                {}
+            ).addTo(map_2bbf94fc6f4b40898b35e2e696c1ed9c);
+        
+    
+            var marker_efb27340ff314c56a8dec912eb32ebd1 = L.marker(
+                [36.2, -99.1],
+                {}
+            ).addTo(feature_group_57ce214bd81f4cbca5293f2e4b3006d5);
+        
+    
+            var icon_fd919ee472a240dd92ba62904554a9f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_efb27340ff314c56a8dec912eb32ebd1.setIcon(icon_fd919ee472a240dd92ba62904554a9f2);
+        
+    
+        var popup_d86d3748e9744452ac4b0eed1be37215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d3ee467512042ee97664e8c9b0a8fd5 = $(`<div id="html_6d3ee467512042ee97664e8c9b0a8fd5" style="width: 100.0%; height: 100.0%;">Hi I am a Marker</div>`)[0];
+            popup_d86d3748e9744452ac4b0eed1be37215.setContent(html_6d3ee467512042ee97664e8c9b0a8fd5);
+        
+
+        marker_efb27340ff314c56a8dec912eb32ebd1.bindPopup(popup_d86d3748e9744452ac4b0eed1be37215)
+        ;
+
+        
+    
 </script>
